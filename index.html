@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulaire</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body-style">
+<div>
+    <h1 class="h1-style">Inscription</h1>
+</div>
+
+<form class="formulaire-style" action="/" method="post">
+    <div class="input-style">
+        <label for="name">Nom</label>
+        <input id="name" name="name" type="text">
+    </div>
+    <div class="input-style">
+        <label for="surname">Prénom</label>
+        <input id="surname" name="surname" type="text">
+    </div>
+    <div class="input-style">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="text">
+    </div>
+    <div class="input-style">
+        <label for="password">Mot de passe</label>
+        <input id="password" name="password" type="password">
+    </div>
+    <button class="button-style" type="submit">S'inscrire</button>
+    <ul>
+        <li>
+            Le mot de passe doit faire entre 8 et 20 caractères.
+        </li>
+        <li>
+            Tous les champs doivent être remplis.
+        </li>
+    </ul>
+    <div>
+        <label for="message" id="message"></label>
+        <label for="messageContainer" id="messageContainer" type="hidden"></label>
+    </div>
+
+</form>
+
+</body>
+</html>
