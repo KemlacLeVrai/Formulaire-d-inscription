@@ -1,4 +1,4 @@
-//document.addEventListener("DOMContentLoaded", event=>{
+document.addEventListener("DOMContentLoaded", event=>{
     const form = document.querySelector('form');
     const formContainer= document.querySelector('formContainer');
     const nom = document.querySelector('input[name="name"]');
@@ -34,15 +34,18 @@
             .then((data) => {
                 console.log("data =>", data);
                 message.innerHTML = data.message;
-                messageContainer.classList.toggle("hidden");
+                messageContainer.classList.toggle('hidden');
+
                 if (data.success===true){
-                    formContainer.classList.add("hidden")
-                }
-                setTimeout(() => {
+                    formContainer.classList.toggle("hidden");
+                }messageContainer.setTimeout(() => {
                     messageContainer.classList.toggle("hidden");
                 }, 3000);
+
+
+
             })
 
     })
-//})
+})
 

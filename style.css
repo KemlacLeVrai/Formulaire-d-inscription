@@ -15,6 +15,7 @@
     align-items: center;
     flex-direction: column;
 
+
 }
 .input-style{
     margin-top:30px;
@@ -27,4 +28,8 @@
     border-radius: 20px;
     border-style: hidden;
     background-color: #00bfff;
+}
+
+.hidden{
+    display: none;
 }
